@@ -28,7 +28,7 @@ CLOUDINARY_KEY = os.getenv("CLOUDINARY_KEY")
 CLOUDINARY_SECRET = os.getenv("CLOUDINARY_SECRET")
 
 # Replace this with your actual MongoDB URI (local or Atlas)
-MONGO_DETAILS ="mongodb+srv://hasanyasmeen008_db_user:amaan_sayed@cluster0.r0jzdzc.mongodb.net/cropic?appName=Cluster0"
+MONGO_DETAILS =""
 client = AsyncIOMotorClient(MONGO_DETAILS)
 database = client.cropic_db
 report_collection = database.get_collection("reports")
